@@ -11,40 +11,33 @@ Componentes necessários:
 
 código do programa:
 
+//Definição dos pins
 const int buttonPin = 2;
-const int ledPin = LED_BUILTIN;
-//counter for the number of the presses
-int buttonPushCounter = 0;
+const int LedPin = 9;
+///variable will chance:
 int buttonState = 0;
-//previous stateof the button 
-int lastButtonState = 0;
+
 
 void setup () {
-  pinMode (buttonPin, INPUT);
-  pinMode (ledPin, OUTPUT);
-  Serial.begin (9600);
+   // initilize the LED pin as an output:
+ pinMode (LedPin, OUTPUT);
+//inizialize the pushbutton pin as an intup:
+ pinMode(buttonPin, INPUT);
 }
 
-void loop () {
-  // read the pushbutton input pin:
-  buttonState = digitalRead(buttonPin);
 
-  // compare the buttonState to its previous state
-  if (buttonState != lastButtonState) {
- // if the state has changed, increment the
-  if ( buttonState == HIGH) {
-    buttonPushCounter++;
-    Serial.println("on");
-    Serial.println("numberof button pushes ");
-    Serial.println(buttonPushCounter);
-  } else { 
-    Serial.println("off");
+void loop  () {
+  //read the state of the pushbutton value:
+ buttonState = digitalRead(buttonPin);
+  //check if the pushbutton is pressed. if it is
+  if (buttonState = HIGH){
+ //turn led on:
+ digitalWrite(LedPin, HIGH);
+  } else {
+ //turn led off:
+ digitalWrite(LedPin, LOW);
   }
-  delay(50);
-
-  // save state
-  lastButtonState = buttonState;
   }
 
-  }
+
 
