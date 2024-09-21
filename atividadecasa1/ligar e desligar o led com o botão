@@ -1,4 +1,4 @@
- # ligar e desligar o botão com o led
+ # ligar e desligar o led com o botão
 O objetivo do circuito é controlar o apagar e acender de um led por meio de um botão.
 
 Componentes necessários:
