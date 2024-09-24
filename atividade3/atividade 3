@@ -1,5 +1,5 @@
 # Enviando dados para a porta serial
- O objetivo do circuito é utilizar o led da placa serial para inidiar o estado do led quando o botâo é precionado.
+ O objetivo do circuito é utilizar o led da placa serial para indicar o estado do led quando o botâo é precionado.
 
 Componentes necessários:
 1. um diodo (led)
