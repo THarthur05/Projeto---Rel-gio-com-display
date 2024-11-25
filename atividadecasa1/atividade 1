@@ -30,7 +30,7 @@ void loop  () {
   //read the state of the pushbutton value:
  buttonState = digitalRead(buttonPin);
   //check if the pushbutton is pressed. if it is
-  if (buttonState = HIGH){
+  if (buttonState == HIGH){
  //turn led on:
  digitalWrite(LedPin, HIGH);
   } else {
